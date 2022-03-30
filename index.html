@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Sybaris Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </header>
+    <section>
+        <form action="" id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Name</label><br>
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email" id="email-label">Email</label><br>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="number" id="number-label">Age (Optional)</label><br>
+                <input type="number" id="number" placeholder="Age" min="18" max="55">
+            </div>
+            <div class="form-group">
+                <label for="dropdown">Which option best describes your current role?</label><br>
+                <select name="dropdown" id="dropdown">
+                    <option value disabled selected>Student current role</option>
+                    <option value="Student">Student</option>
+                    <option value="Full Time Job">Full Time Job</option>
+                    <option value="Full Time Learner">Full Time Learner</option>
+                    <option value="Prefer not to say">Prefer not to say</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="form-group radicals">
+                <label for="choose-radio" id="choose-radio">Would you recommend Sybaris to a friend?</label><br>
+                <div class="radd first">
+                    <input type="radio" name="choose-radio" id="radio" checked>
+                    <p>Definitely</p>
+                </div>
+                <div class="radd">
+                    <input type="radio" name="choose-radio" id="radio">
+                    <p>Maybe</p>
+                </div>
+                <div class="radd">
+                    <input type="radio" name="choose-radio" id="radio">
+                    <p>Not Sure</p>
+                </div>
+            </div>
+            <div class="form-group radicals">
+                <label for="checkboxes" id="checkboxes">What would you like to see improved? <span>(Check all that apply)</span></label> <br>
+                <div class="checkk first">
+                    <input type="checkbox" value="Front-end Projects" name="checkboxes" id="checkboxes">
+                    <p>Front-end Projects</p>
+                </div>
+                <div class="checkk">
+                    <input type="checkbox" value="Back-end Projects" name="checkboxes" id="checkboxes">
+                    <p>Back-end Projects</p>
+                </div>
+                <div class="checkk">
+                    <input type="checkbox" value="Data Visualization" name="checkboxes" id="checkboxes">
+                    <p>Data Visualization</p>
+                </div>
+                <div class="checkk">
+                    <input type="checkbox" value="Challenges" name="checkboxes" id="checkboxes">
+                    <p>Challenges</p>
+                </div>
+                <div class="checkk">
+                    <input type="checkbox" value="Open Source Community" name="checkboxes" id="checkboxes">
+                    <p>Open Source Community</p>
+                </div>
+                <div class="checkk">
+                    <input type="checkbox" value="Forum" name="checkboxes" id="checkboxes">
+                    <p>Forum</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="comments" id="textarea-label">Any comments or suggestions?</label><br>
+                <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+
+</html>

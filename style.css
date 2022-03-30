@@ -1,0 +1,133 @@
+:root {
+    --color-white: #f3f3f3;
+    --color-darkblue: #1b1b32;
+    --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+    --color-green: #37af65;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--color-white);
+    margin: 0;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-image: linear-gradient( 10deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header {
+    padding: 30px 0px;
+    text-align: center;
+    max-width: 700px;
+    display: block;
+    margin: auto;
+}
+
+header h1,
+header p {
+    margin: 0px;
+    margin-top: 10px;
+}
+
+#survey-form {
+    border-radius: 10px;
+    background-color: rgba(27, 27, 50, 0.8);
+    max-width: 700px;
+    display: block;
+    margin: auto;
+    padding: 40px 40px;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+#name,
+#email,
+#number,
+#dropdown {
+    width: 100%;
+    height: 45px;
+    border-radius: 5px;
+    padding: 0px 10px;
+}
+
+input::placeholder {
+    font-family: 'Poppins', sans-serif;
+    padding: 8px 10px;
+    font-size: 1rem;
+}
+
+#name,
+#email,
+#number,
+select,
+option {
+    margin-top: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.radd,
+.checkk {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.first {
+    margin-top: 10px;
+}
+
+.radd p,
+.checkk p {
+    margin: 0px;
+    margin-top: -3px;
+    margin-left: 10px;
+}
+
+span {
+    font-size: 0.8rem;
+}
+
+.radicals {
+    margin-bottom: 25px;
+}
+
+textarea {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+button {
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    background-color: #00e961;
+    padding: 15px 0px;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
